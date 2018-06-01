@@ -1,7 +1,36 @@
 .caliente-interactive-hero {
 
-  &__clip {
+  &__container {
+    position: relative;
+    width: 500px;
+    height: 10px;
+  }
 
+  &__background {
+    position: absolute;
+  }
+
+  &__clip {
+    position: absolute;
+    display: block;
+  }
+
+  &__clip--b {
+    right: 260px;
+  }
+
+  &__clip--image {
+    position: absolute;
+  }
+
+  &__clip--glow {
+    position: absolute;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+  &__clip--glow:hover {
+    opacity: 1;
   }
 
   &__button {

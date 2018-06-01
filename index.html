@@ -5,12 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Caliente Interactive Hero</title>
+    <link rel="stylesheet" href="dist/caliente-interactive-hero.min.css">
 </head>
 <body>
 
-    <div id="caliente-interactive-hero" class="caliente-interactive-hero">
-
+    <div id="caliente-interactive-hero" class="caliente-interactive-hero__container">
+        <div class="caliente-interactive-hero__background">
+            <img src="src/img/background.jpg" alt="" class="caliente-interactive-hero__background--image">
+        </div>
+        <a href="#" class="caliente-interactive-hero__clip caliente-interactive-hero__clip--a" data-interactive-clip>
+            <div class="caliente-interactive-hero__clip--image" data-clip>
+                <img src="src/img/clip.png" alt="">
+            </div>
+            <div class="caliente-interactive-hero__clip--glow" data-glow>
+                <img src="src/img/glow.png" alt="">
+            </div>
+        </a>
+        <a href="#" class="caliente-interactive-hero__clip caliente-interactive-hero__clip--b" data-interactive-clip>
+            <div class="caliente-interactive-hero__clip--image" data-clip>
+                <img src="src/img/clip.png" alt="">
+            </div>
+            <div class="caliente-interactive-hero__clip--glow" data-glow>
+                <img src="src/img/glow-2.png" alt="">
+            </div>
+        </a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

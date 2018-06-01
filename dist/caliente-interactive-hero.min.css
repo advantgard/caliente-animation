@@ -1,0 +1,21 @@
+.caliente-interactive-hero__container {
+  position: relative;
+  width: 500px;
+  height: 10px; }
+.caliente-interactive-hero__background {
+  position: absolute; }
+.caliente-interactive-hero__clip {
+  position: absolute;
+  display: block; }
+.caliente-interactive-hero__clip--b {
+  right: 260px; }
+.caliente-interactive-hero__clip--image {
+  position: absolute; }
+.caliente-interactive-hero__clip--glow {
+  position: absolute;
+  transition: opacity 0.5s;
+  opacity: 0; }
+.caliente-interactive-hero__clip--glow:hover {
+  opacity: 1; }
+
+/*# sourceMappingURL=caliente-interactive-hero.min.css.map */
