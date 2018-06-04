@@ -13,9 +13,8 @@
   position: absolute; }
 .caliente-interactive-hero__clip--glow {
   position: absolute;
-  transition: opacity 0.5s;
   opacity: 0; }
 .caliente-interactive-hero__clip--glow:hover {
-  opacity: 1; }
+  opacity: 1 !important; }
 
 /*# sourceMappingURL=caliente-interactive-hero.min.css.map */
