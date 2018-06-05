@@ -74,9 +74,18 @@
     }
   }
 
-
+  &__sub-title {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 10px 0 25px 0;
+    display: none;
+  }
 
   @media screen and (min-width: $screen-sm-min) {
+
+    &__sub-title {
+      display: block;
+    }
 
     &--mobile {
       display: none;
