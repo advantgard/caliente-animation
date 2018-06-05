@@ -7,6 +7,10 @@
   $screen-md-min: 992px;
   $screen-lg-min: 1200px;
 
+  &--mobile > img {
+    width: 100%;
+  }
+
   &__container {
     display: none;
   }
@@ -22,6 +26,7 @@
     background-size: contain;
     cursor: pointer;
     display: inline-block;
+    -moz-transition: background-image 0.1s ease-in-out;
     -webkit-transition: background-image 0.1s ease-in-out;
     transition: background-image 0.1s ease-in-out;
   }
@@ -68,22 +73,31 @@
 
   @media screen and (min-width: $screen-sm-min) {
 
+    &--mobile {
+      display: none;
+    }
+
     &__container {
       display: block;
       position: relative;
       background: url("../src/img/bg-desktop.jpg") center top no-repeat;
       background-size: cover;
-      height: 725px;
+      height: 515px;
     }
 
     &__clip {
       position: absolute;
       display: block;
+      -webkit-transform: scale(.7);
+      -moz-transform: scale(.7);
+      -ms-transform: scale(.7);
+      -o-transform: scale(.7);
+      transform: scale(.7);
     }
 
     &__clip--a {
-      bottom: 0;
-      left: -752px;
+      bottom: -68px;
+      left: -542px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -92,7 +106,7 @@
     }
 
     &__clip--b {
-      bottom: 73px;
+      bottom: 3px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -103,9 +117,9 @@
     }
 
     &__clip--c {
-      bottom: 15px;
+      bottom: -25px;
       left: 0;
-      right: -100px;
+      right: -70px;
       margin-left: auto;
       margin-right: auto;
       width: 416px;
@@ -114,9 +128,9 @@
     }
 
     &__clip--d {
-      bottom: 0;
+      bottom: -75px;
       left: 0;
-      right: -760px;
+      right: -531px;
       margin-left: auto;
       margin-right: auto;
       width: 381px;
@@ -125,8 +139,8 @@
     }
 
     &__clip--e {
-      bottom: 27px;
-      left: -346px;
+      bottom: -13px;
+      left: -236px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -136,8 +150,8 @@
     }
 
     &__clip--f {
-      bottom: 182px;
-      left: -172px;
+      bottom: 112px;
+      left: -122px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -148,7 +162,7 @@
 
 
     &__clip--table {
-      bottom: 0;
+      bottom: -18px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -159,7 +173,7 @@
     }
 
     &__clip--personajes {
-      bottom: 0;
+      bottom: -59px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -170,8 +184,8 @@
     }
 
     &__clip--servilleta {
-      bottom: 0;
-      left: -143px;
+      bottom: -14px;
+      left: -93px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -197,12 +211,65 @@
 
   @media screen and (min-width: $screen-md-min) {
 
+    &__clip {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+
     &__container {
       height: 560px;
     }
 
     &__container--buttons {
       width: 80%;
+    }
+
+    &__clip--table {
+      bottom: 0;
+    }
+
+    &__clip--personajes {
+      bottom: 0;
+    }
+
+    &__clip--servilleta {
+      bottom: 0;
+      left: -143px;
+      right: 0;
+    }
+
+    &__clip--a {
+      bottom: 0;
+      left: -752px;
+      right: 0;
+    }
+
+    &__clip--b {
+      bottom: 73px;
+    }
+
+    &__clip--c {
+      bottom: 15px;
+      left: 0;
+      right: -100px;
+    }
+
+    &__clip--d {
+      bottom: 0;
+      right: -760px;
+    }
+
+    &__clip--e {
+      bottom: 27px;
+      left: -346px;
+    }
+
+    &__clip--f {
+      bottom: 182px;
+      left: -172px;
     }
 
   }

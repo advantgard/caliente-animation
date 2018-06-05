@@ -2,6 +2,8 @@
   /**
   Breakpoints
    */ }
+  .caliente-interactive-hero--mobile > img {
+    width: 100%; }
   .caliente-interactive-hero__container {
     display: none; }
   .caliente-interactive-hero__container--buttons {
@@ -13,6 +15,7 @@
     background-size: contain;
     cursor: pointer;
     display: inline-block;
+    -moz-transition: background-image 0.1s ease-in-out;
     -webkit-transition: background-image 0.1s ease-in-out;
     transition: background-image 0.1s ease-in-out; }
   .caliente-interactive-hero__button--apuestas {
@@ -36,25 +39,32 @@
     .caliente-interactive-hero__button--premios:hover {
       background-image: url("../src/img/premios-btn-hover.png"); }
   @media screen and (min-width: 768px) {
+    .caliente-interactive-hero--mobile {
+      display: none; }
     .caliente-interactive-hero__container {
       display: block;
       position: relative;
       background: url("../src/img/bg-desktop.jpg") center top no-repeat;
       background-size: cover;
-      height: 725px; }
+      height: 515px; }
     .caliente-interactive-hero__clip {
       position: absolute;
-      display: block; }
+      display: block;
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      transform: scale(0.7); }
     .caliente-interactive-hero__clip--a {
-      bottom: 0;
-      left: -752px;
+      bottom: -68px;
+      left: -542px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
       width: 321px;
       height: 454px; }
     .caliente-interactive-hero__clip--b {
-      bottom: 73px;
+      bottom: 3px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -63,26 +73,26 @@
       height: 315px;
       z-index: 3; }
     .caliente-interactive-hero__clip--c {
-      bottom: 15px;
+      bottom: -25px;
       left: 0;
-      right: -100px;
+      right: -70px;
       margin-left: auto;
       margin-right: auto;
       width: 416px;
       height: 236px;
       z-index: 10; }
     .caliente-interactive-hero__clip--d {
-      bottom: 0;
+      bottom: -75px;
       left: 0;
-      right: -760px;
+      right: -531px;
       margin-left: auto;
       margin-right: auto;
       width: 381px;
       height: 504px;
       z-index: 10; }
     .caliente-interactive-hero__clip--e {
-      bottom: 27px;
-      left: -346px;
+      bottom: -13px;
+      left: -236px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -90,8 +100,8 @@
       height: 168px;
       z-index: 12; }
     .caliente-interactive-hero__clip--f {
-      bottom: 182px;
-      left: -172px;
+      bottom: 112px;
+      left: -122px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -99,7 +109,7 @@
       height: 93px;
       z-index: 12; }
     .caliente-interactive-hero__clip--table {
-      bottom: 0;
+      bottom: -18px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -108,7 +118,7 @@
       height: 118px;
       z-index: 5; }
     .caliente-interactive-hero__clip--personajes {
-      bottom: 0;
+      bottom: -59px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -117,8 +127,8 @@
       height: 397px;
       z-index: 2; }
     .caliente-interactive-hero__clip--servilleta {
-      bottom: 0;
-      left: -143px;
+      bottom: -14px;
+      left: -93px;
       right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -133,10 +143,43 @@
     .caliente-interactive-hero__clip--glow:hover {
       opacity: 1 !important; } }
   @media screen and (min-width: 992px) {
+    .caliente-interactive-hero__clip {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
     .caliente-interactive-hero__container {
       height: 560px; }
     .caliente-interactive-hero__container--buttons {
-      width: 80%; } }
+      width: 80%; }
+    .caliente-interactive-hero__clip--table {
+      bottom: 0; }
+    .caliente-interactive-hero__clip--personajes {
+      bottom: 0; }
+    .caliente-interactive-hero__clip--servilleta {
+      bottom: 0;
+      left: -143px;
+      right: 0; }
+    .caliente-interactive-hero__clip--a {
+      bottom: 0;
+      left: -752px;
+      right: 0; }
+    .caliente-interactive-hero__clip--b {
+      bottom: 73px; }
+    .caliente-interactive-hero__clip--c {
+      bottom: 15px;
+      left: 0;
+      right: -100px; }
+    .caliente-interactive-hero__clip--d {
+      bottom: 0;
+      right: -760px; }
+    .caliente-interactive-hero__clip--e {
+      bottom: 27px;
+      left: -346px; }
+    .caliente-interactive-hero__clip--f {
+      bottom: 182px;
+      left: -172px; } }
   @media screen and (min-width: 1200px) {
     .caliente-interactive-hero__container {
       height: 725px; } }
