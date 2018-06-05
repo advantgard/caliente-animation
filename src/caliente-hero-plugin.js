@@ -70,6 +70,29 @@ $( function () {
 
     };
 
+    pub.loopButtonsAnimation = function () {
+        $($interactiveButtons[0]).toggleClass("hovered");
+        setTimeout(function () {
+            $($interactiveButtons[0]).toggleClass("hovered");
+            $($interactiveButtons[1]).toggleClass("hovered");
+        }, 1000);
+        setTimeout(function () {
+            $($interactiveButtons[1]).toggleClass("hovered");
+            $($interactiveButtons[2]).toggleClass("hovered");
+        }, 2000);
+        setTimeout(function () {
+            $($interactiveButtons[2]).toggleClass("hovered");
+            $($interactiveButtons[3]).toggleClass("hovered");
+        }, 3000);
+        setTimeout(function () {
+            $($interactiveButtons[3]).toggleClass("hovered");
+            $($interactiveButtons[4]).toggleClass("hovered");
+        }, 4000);
+        setTimeout(function () {
+            $($interactiveButtons[4]).toggleClass("hovered");
+        }, 5000);
+    };
+
     /**
      * Main entry point
      */
@@ -77,7 +100,11 @@ $( function () {
         $glow.on("mouseover", function () {
             $glow.finish();
         });
-        pub.loopAnimation($glow);
+        if(window.innerWidth < 768) {
+            pub.loopButtonsAnimation();
+        } else {
+            pub.loopAnimation($glow);
+        }
     };
 
     pub.init();

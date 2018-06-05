@@ -34,7 +34,8 @@
   &__button--apuestas {
     background-image: url("../src/img/apuestas-btn.png");
 
-    &:hover {
+    &:hover,
+    &.hovered {
       background-image: url("../src/img/apuestas-btn-hover.png");
     }
   }
@@ -42,7 +43,8 @@
   &__button--antojos {
     background-image: url("../src/img/antojos-btn.png");
 
-    &:hover {
+    &:hover,
+    &.hovered {
       background-image: url("../src/img/antojos-btn-hover.png");
     }
   }
@@ -50,21 +52,24 @@
   &__button--carasbo {
     background-image: url("../src/img/carasbo-btn.png");
 
-    &:hover {
+    &:hover,
+    &.hovered {
       background-image: url("../src/img/carasbo-btn-hover.png");
     }
   }
   &__button--eventos {
     background-image: url("../src/img/eventos-btn.png");
 
-    &:hover {
+    &:hover,
+    &.hovered {
       background-image: url("../src/img/eventos-btn-hover.png");
     }
   }
   &__button--premios {
     background-image: url("../src/img/premios-btn.png");
 
-    &:hover {
+    &:hover,
+    &.hovered {
       background-image: url("../src/img/premios-btn-hover.png");
     }
   }

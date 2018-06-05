@@ -20,23 +20,23 @@
     transition: background-image 0.1s ease-in-out; }
   .caliente-interactive-hero__button--apuestas {
     background-image: url("../src/img/apuestas-btn.png"); }
-    .caliente-interactive-hero__button--apuestas:hover {
+    .caliente-interactive-hero__button--apuestas:hover, .caliente-interactive-hero__button--apuestas.hovered {
       background-image: url("../src/img/apuestas-btn-hover.png"); }
   .caliente-interactive-hero__button--antojos {
     background-image: url("../src/img/antojos-btn.png"); }
-    .caliente-interactive-hero__button--antojos:hover {
+    .caliente-interactive-hero__button--antojos:hover, .caliente-interactive-hero__button--antojos.hovered {
       background-image: url("../src/img/antojos-btn-hover.png"); }
   .caliente-interactive-hero__button--carasbo {
     background-image: url("../src/img/carasbo-btn.png"); }
-    .caliente-interactive-hero__button--carasbo:hover {
+    .caliente-interactive-hero__button--carasbo:hover, .caliente-interactive-hero__button--carasbo.hovered {
       background-image: url("../src/img/carasbo-btn-hover.png"); }
   .caliente-interactive-hero__button--eventos {
     background-image: url("../src/img/eventos-btn.png"); }
-    .caliente-interactive-hero__button--eventos:hover {
+    .caliente-interactive-hero__button--eventos:hover, .caliente-interactive-hero__button--eventos.hovered {
       background-image: url("../src/img/eventos-btn-hover.png"); }
   .caliente-interactive-hero__button--premios {
     background-image: url("../src/img/premios-btn.png"); }
-    .caliente-interactive-hero__button--premios:hover {
+    .caliente-interactive-hero__button--premios:hover, .caliente-interactive-hero__button--premios.hovered {
       background-image: url("../src/img/premios-btn-hover.png"); }
   @media screen and (min-width: 768px) {
     .caliente-interactive-hero--mobile {
