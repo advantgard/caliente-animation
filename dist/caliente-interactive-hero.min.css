@@ -1,97 +1,144 @@
-.caliente-interactive-hero__container {
-  position: relative;
-  background: url("../src/img/bg-desktop.jpg") center top no-repeat;
-  background-size: cover;
-  height: 725px; }
-.caliente-interactive-hero__clip {
-  position: absolute;
-  display: block; }
-.caliente-interactive-hero__clip--a {
-  bottom: 0;
-  left: -752px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 321px;
-  height: 454px; }
-.caliente-interactive-hero__clip--b {
-  bottom: 73px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 310px;
-  height: 315px;
-  z-index: 3; }
-.caliente-interactive-hero__clip--c {
-  bottom: 15px;
-  left: 0;
-  right: -100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 416px;
-  height: 236px;
-  z-index: 10; }
-.caliente-interactive-hero__clip--d {
-  bottom: 0;
-  left: 755px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 381px;
-  height: 504px;
-  z-index: 10; }
-.caliente-interactive-hero__clip--e {
-  bottom: 27px;
-  left: -346px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 163px;
-  height: 168px;
-  z-index: 12; }
-.caliente-interactive-hero__clip--f {
-  bottom: 182px;
-  left: -172px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 83px;
-  height: 93px;
-  z-index: 12; }
-.caliente-interactive-hero__clip--table {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 460px;
-  height: 118px;
-  z-index: 5; }
-.caliente-interactive-hero__clip--personajes {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 614px;
-  height: 397px;
-  z-index: 2; }
-.caliente-interactive-hero__clip--servilleta {
-  bottom: 0;
-  left: -143px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 119px;
-  height: 82px;
-  z-index: 11; }
-.caliente-interactive-hero__clip--image {
-  position: absolute; }
-.caliente-interactive-hero__clip--glow {
-  position: absolute;
-  opacity: 0; }
-.caliente-interactive-hero__clip--glow:hover {
-  opacity: 1 !important; }
+.caliente-interactive-hero {
+  /**
+  Breakpoints
+   */ }
+  .caliente-interactive-hero__container {
+    display: none; }
+  .caliente-interactive-hero__container--buttons {
+    margin: 30px auto;
+    text-align: center; }
+  .caliente-interactive-hero__button {
+    width: 328px;
+    height: 113px;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: background-image 0.1s ease-in-out;
+    transition: background-image 0.1s ease-in-out; }
+  .caliente-interactive-hero__button--apuestas {
+    background-image: url("../src/img/apuestas-btn.png"); }
+    .caliente-interactive-hero__button--apuestas:hover {
+      background-image: url("../src/img/apuestas-btn-hover.png"); }
+  .caliente-interactive-hero__button--antojos {
+    background-image: url("../src/img/antojos-btn.png"); }
+    .caliente-interactive-hero__button--antojos:hover {
+      background-image: url("../src/img/antojos-btn-hover.png"); }
+  .caliente-interactive-hero__button--carasbo {
+    background-image: url("../src/img/carasbo-btn.png"); }
+    .caliente-interactive-hero__button--carasbo:hover {
+      background-image: url("../src/img/carasbo-btn-hover.png"); }
+  .caliente-interactive-hero__button--eventos {
+    background-image: url("../src/img/eventos-btn.png"); }
+    .caliente-interactive-hero__button--eventos:hover {
+      background-image: url("../src/img/eventos-btn-hover.png"); }
+  .caliente-interactive-hero__button--premios {
+    background-image: url("../src/img/premios-btn.png"); }
+    .caliente-interactive-hero__button--premios:hover {
+      background-image: url("../src/img/premios-btn-hover.png"); }
+  @media screen and (min-width: 768px) {
+    .caliente-interactive-hero__container {
+      display: block;
+      position: relative;
+      background: url("../src/img/bg-desktop.jpg") center top no-repeat;
+      background-size: cover;
+      height: 725px; }
+    .caliente-interactive-hero__clip {
+      position: absolute;
+      display: block; }
+    .caliente-interactive-hero__clip--a {
+      bottom: 0;
+      left: -752px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 321px;
+      height: 454px; }
+    .caliente-interactive-hero__clip--b {
+      bottom: 73px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 310px;
+      height: 315px;
+      z-index: 3; }
+    .caliente-interactive-hero__clip--c {
+      bottom: 15px;
+      left: 0;
+      right: -100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 416px;
+      height: 236px;
+      z-index: 10; }
+    .caliente-interactive-hero__clip--d {
+      bottom: 0;
+      left: 0;
+      right: -760px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 381px;
+      height: 504px;
+      z-index: 10; }
+    .caliente-interactive-hero__clip--e {
+      bottom: 27px;
+      left: -346px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 163px;
+      height: 168px;
+      z-index: 12; }
+    .caliente-interactive-hero__clip--f {
+      bottom: 182px;
+      left: -172px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 83px;
+      height: 93px;
+      z-index: 12; }
+    .caliente-interactive-hero__clip--table {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 460px;
+      height: 118px;
+      z-index: 5; }
+    .caliente-interactive-hero__clip--personajes {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 614px;
+      height: 397px;
+      z-index: 2; }
+    .caliente-interactive-hero__clip--servilleta {
+      bottom: 0;
+      left: -143px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 119px;
+      height: 82px;
+      z-index: 11; }
+    .caliente-interactive-hero__clip--image {
+      position: absolute; }
+    .caliente-interactive-hero__clip--glow {
+      position: absolute;
+      opacity: 0; }
+    .caliente-interactive-hero__clip--glow:hover {
+      opacity: 1 !important; } }
+  @media screen and (min-width: 992px) {
+    .caliente-interactive-hero__container {
+      height: 560px; }
+    .caliente-interactive-hero__container--buttons {
+      width: 80%; } }
+  @media screen and (min-width: 1200px) {
+    .caliente-interactive-hero__container {
+      height: 725px; } }
 
 /*# sourceMappingURL=caliente-interactive-hero.min.css.map */

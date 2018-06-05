@@ -1,130 +1,217 @@
 .caliente-interactive-hero {
 
+  /**
+  Breakpoints
+   */
+  $screen-sm-min: 768px;
+  $screen-md-min: 992px;
+  $screen-lg-min: 1200px;
+
   &__container {
-    position: relative;
-    background: url("../src/img/bg-desktop.jpg") center top no-repeat;
-    background-size: cover;
-    height: 725px;
+    display: none;
   }
 
-  &__clip {
-    position: absolute;
-    display: block;
-  }
-
-  &__clip--a {
-    bottom: 0;
-    left: -752px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 321px;
-    height: 454px;
-  }
-
-  &__clip--b {
-    bottom: 73px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 310px;
-    height: 315px;
-    z-index: 3;
-  }
-
-  &__clip--c {
-    bottom: 15px;
-    left: 0;
-    right: -100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 416px;
-    height: 236px;
-    z-index: 10;
-  }
-
-  &__clip--d {
-    bottom: 0;
-    left: 755px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 381px;
-    height: 504px;
-    z-index: 10;
-  }
-
-  &__clip--e {
-    bottom: 27px;
-    left: -346px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 163px;
-    height: 168px;
-    z-index: 12;
-  }
-
-  &__clip--f {
-    bottom: 182px;
-    left: -172px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 83px;
-    height: 93px;
-    z-index: 12;
-  }
-
-
-  &__clip--table {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 460px;
-    height: 118px;
-    z-index: 5;
-  }
-
-  &__clip--personajes {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 614px;
-    height: 397px;
-    z-index: 2;
-  }
-
-  &__clip--servilleta {
-    bottom: 0;
-    left: -143px;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 119px;
-    height: 82px;
-    z-index: 11;
-  }
-
-  &__clip--image {
-    position: absolute;
-  }
-
-  &__clip--glow {
-    position: absolute;
-    opacity: 0;
-  }
-
-  &__clip--glow:hover {
-    opacity: 1 !important;
+  &__container--buttons {
+    margin: 30px auto;
+    text-align: center;
   }
 
   &__button {
+    width: 328px;
+    height: 113px;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: background-image 0.1s ease-in-out;
+    transition: background-image 0.1s ease-in-out;
+  }
+
+  &__button--apuestas {
+    background-image: url("../src/img/apuestas-btn.png");
+
+    &:hover {
+      background-image: url("../src/img/apuestas-btn-hover.png");
+    }
+  }
+
+  &__button--antojos {
+    background-image: url("../src/img/antojos-btn.png");
+
+    &:hover {
+      background-image: url("../src/img/antojos-btn-hover.png");
+    }
+  }
+
+  &__button--carasbo {
+    background-image: url("../src/img/carasbo-btn.png");
+
+    &:hover {
+      background-image: url("../src/img/carasbo-btn-hover.png");
+    }
+  }
+  &__button--eventos {
+    background-image: url("../src/img/eventos-btn.png");
+
+    &:hover {
+      background-image: url("../src/img/eventos-btn-hover.png");
+    }
+  }
+  &__button--premios {
+    background-image: url("../src/img/premios-btn.png");
+
+    &:hover {
+      background-image: url("../src/img/premios-btn-hover.png");
+    }
+  }
+
+
+
+  @media screen and (min-width: $screen-sm-min) {
+
+    &__container {
+      display: block;
+      position: relative;
+      background: url("../src/img/bg-desktop.jpg") center top no-repeat;
+      background-size: cover;
+      height: 725px;
+    }
+
+    &__clip {
+      position: absolute;
+      display: block;
+    }
+
+    &__clip--a {
+      bottom: 0;
+      left: -752px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 321px;
+      height: 454px;
+    }
+
+    &__clip--b {
+      bottom: 73px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 310px;
+      height: 315px;
+      z-index: 3;
+    }
+
+    &__clip--c {
+      bottom: 15px;
+      left: 0;
+      right: -100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 416px;
+      height: 236px;
+      z-index: 10;
+    }
+
+    &__clip--d {
+      bottom: 0;
+      left: 0;
+      right: -760px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 381px;
+      height: 504px;
+      z-index: 10;
+    }
+
+    &__clip--e {
+      bottom: 27px;
+      left: -346px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 163px;
+      height: 168px;
+      z-index: 12;
+    }
+
+    &__clip--f {
+      bottom: 182px;
+      left: -172px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 83px;
+      height: 93px;
+      z-index: 12;
+    }
+
+
+    &__clip--table {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 460px;
+      height: 118px;
+      z-index: 5;
+    }
+
+    &__clip--personajes {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 614px;
+      height: 397px;
+      z-index: 2;
+    }
+
+    &__clip--servilleta {
+      bottom: 0;
+      left: -143px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 119px;
+      height: 82px;
+      z-index: 11;
+    }
+
+    &__clip--image {
+      position: absolute;
+    }
+
+    &__clip--glow {
+      position: absolute;
+      opacity: 0;
+    }
+
+    &__clip--glow:hover {
+      opacity: 1 !important;
+    }
+
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+
+    &__container {
+      height: 560px;
+    }
+
+    &__container--buttons {
+      width: 80%;
+    }
+
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+
+    &__container {
+      height: 725px;
+    }
 
   }
 
