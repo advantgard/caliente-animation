@@ -43,7 +43,7 @@
     text-align: center;
     margin: 10px 0 25px 0;
     display: none;
-    font-size: 18px; }
+    font-size: 20px; }
   @media screen and (min-width: 768px) {
     .caliente-interactive-hero__sub-title {
       display: block;
