@@ -39,13 +39,15 @@
     .caliente-interactive-hero__button--premios:hover, .caliente-interactive-hero__button--premios.hovered {
       background-image: url("../src/img/premios-btn-hover.png"); }
   .caliente-interactive-hero__sub-title {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     margin: 10px 0 25px 0;
-    display: none; }
+    display: none;
+    font-size: 18px; }
   @media screen and (min-width: 768px) {
     .caliente-interactive-hero__sub-title {
-      display: block; }
+      display: block;
+      font-size: 20px; }
     .caliente-interactive-hero--mobile {
       display: none; }
     .caliente-interactive-hero__container {
