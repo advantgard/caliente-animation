@@ -49,6 +49,11 @@ $( function () {
 
     };
 
+    /**
+     * Async function: Loops through clip elements on the banner
+     * @param $elements: Array of selectors for the clips
+     * @param index
+     */
     pub.loopAnimation = function ($elements, index) {
 
         var current = index || 0;
@@ -57,7 +62,7 @@ $( function () {
             pub.blink($($elements[current + 1]), 0, function () {
                 pub.blink($($elements[current + 2]), 0, function () {
                     pub.blink($($elements[current + 3]), 0, function () {
-
+                        pub.blink($($elements[current + 4]));
                     })
                 })
             });
