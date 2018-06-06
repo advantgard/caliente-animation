@@ -59,6 +59,8 @@ $( function () {
         var current = index || 0;
 
         pub.blink($($elements[current]), 0, function () {
+
+            pub.blink($($elements[5]));
             pub.blink($($elements[current + 1]), 0, function () {
                 pub.blink($($elements[current + 2]), 0, function () {
                     pub.blink($($elements[current + 3]), 0, function () {
@@ -66,6 +68,7 @@ $( function () {
                     })
                 })
             });
+
         });
 
     };
