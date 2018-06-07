@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development ./src/caliente-hero-plugin.js --output ./dist/caliente-hero-plugin.min.js --watch",
     "build": "webpack --mode production ./src/caliente-hero-plugin.js --output ./dist/caliente-hero-plugin.min.js",
-    "css": "sass --watch src/scss/caliente-interactive-hero.scss:dist/caliente-interactive-hero.min.css",
+    "css": "sass --watch src/scss/caliente-interactive-hero.scss:dist/caliente-interactive-hero.min.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

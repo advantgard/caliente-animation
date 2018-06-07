@@ -78,14 +78,22 @@
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     margin: 25px 0 25px 0;
+    font-size: 26px;
     display: none;
+  }
+
+  &__sub-title--mobile {
+    display: block;
   }
 
   @media screen and (min-width: $screen-sm-min) {
 
     &__sub-title {
       display: block;
-      font-size: 26px;
+    }
+
+    &__sub-title--mobile {
+      display: none;
     }
 
     &--mobile {
